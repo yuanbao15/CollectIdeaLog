@@ -1,4 +1,4 @@
-### 简介：本工具用于检测IDEA中通义灵码插件的使用信息。
+### 简介：本工具用于收集IDEA日志用于分析通义灵码插件的使用信息。
 
 created by yuanbao at 20250228
 
@@ -6,11 +6,11 @@ created by yuanbao at 20250228
 
 ### 要求：
 
-1、本工具支持IDEA专业版和社区版，会自动优先适用版本年月最高的那个IDEA，若年月相同则优先适用专业版，其次社区版。
-2、使用本工具前，应确保在IDEA内，Help->Diagnostic Tools->Debug Log Settings，有输入：#com.alibaba.lingma.plugin。配置好后重启IDEA才可生效。
-3、触发本工具前，要求停用HTTP网络代理，关闭VPN。
-4、本工具运行时，需输入本人的真实中文姓名。
-5、看到进度条100%，才表示上传成功。
+1. 本工具支持IDEA专业版和社区版，会自动优先适用版本年月最高的那个IDEA，若年月相同则优先适用专业版，其次社区版。
+2. 使用本工具前，应确保在IDEA内，Help->Diagnostic Tools->Debug Log Settings，有输入：#com.alibaba.lingma.plugin。配置好后重启IDEA才可生效。
+3. 触发本工具前，要求停用HTTP网络代理，关闭VPN。
+4. 本工具运行时，需输入本人的真实中文姓名。
+5. 看到进度条100%，才表示上传成功。
 
 
 
