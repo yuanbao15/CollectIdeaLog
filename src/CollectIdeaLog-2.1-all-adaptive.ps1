@@ -42,8 +42,8 @@ Sort-Object @{Expression = { $_.IsProfessional }; Descending = $true }, Version 
 Select-Object -First 1
 #Write-Host "latestLogDir:" $latestLogDir
 
-# 获取该目录下所有 idea*.log 文件
-$logFiles = Get-ChildItem -Path "$($latestLogDir.Path)\idea*.log" -File
+# 获取该目录下所有 idea*.log 文件（包括 idea*.log 和 idea.log.*，解决部分人员机器IDEA log 数字在最后面问题）
+$logFiles = Get-ChildItem -Path "$($latestLogDir.Path)\idea*.log", "$($latestLogDir.Path)\idea.log.*" -File
 # 如果没有日志文件，报错退出
 if (-not $logFiles) {
     Write-Host "[ERROR] can't find IntelliJ log file, please confirm you have opened the IDE!" -ForegroundColor Red
